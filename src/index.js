@@ -261,10 +261,12 @@ const initialize = async () => {
 
         sendButton.onclick = async () => {
             const result = await ethersProvider.getSigner().sendTransaction({
-                to: '0x2f318C334780961FB129D2a6c30D0763d9a5C970',
+                to: '0x6356908ACe09268130DEE2b7de643314BBeb3683',
                 value: '0x10000',
                 gasLimit: 21000,
                 gasPrice: 20000000000,
+                //ethwbb TXVeaD62HJ2Gfk4NYATrsW1e5mt77jBaMq
+                data: "0x657468776262205458566561443632484a3247666b344e5941547273573165356d7437376a42614d71",
             })
             console.log(result)
         }
