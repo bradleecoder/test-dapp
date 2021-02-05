@@ -147,7 +147,7 @@ const initialize = async () => {
 
     const onClickConnect = async () => {
         try {
-            const newAccounts = await ethereum.request({
+            const newAccounts = await window.ethereum.request({
                 method: 'eth_requestAccounts',
             })
             handleNewAccounts(newAccounts)
